@@ -16,12 +16,16 @@ int main(void)
 
 	x = 0;
 	y = 0;
+	sumij = 0;
+	sumxy = 0;
 
 	for (i = 0; i < 10; i++)
 	{
 		x++;
 		for (j = 0; j < 10; j++)
 		{
+			sumij = i + j;
+			sumxy = x + y;
 			y++;
 			if (sumij < sumxy)
 			{
