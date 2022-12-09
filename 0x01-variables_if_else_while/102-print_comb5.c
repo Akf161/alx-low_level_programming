@@ -14,31 +14,29 @@ int main(void)
 	int sumij;
 	int sumxy;
 
-	x = 0;
-	y = 0;
 	sumij = 0;
 	sumxy = 0;
 
 	for (i = 0; i < 10; i++)
 	{
-		x++;
-		for (j = 0; j < 10; j++)
+		for (j = 0; j < 9; j++)
 		{
-			sumij = i + j;
-			sumxy = x + y;
-			y++;
-			if (sumij < sumxy)
+			for (x = 0; x < 10; x++)
 			{
-				putchar(i + '0');
-				putchar(j + '0');
-				if (j < 9)
-					putchar(' ');
-				putchar(x + '0');
-				putchar(y + '0');
-				if (y < 10)
+				for (y = 0; y < 10; y++)
 				{
-					putchar(',');
-					putchar(' ');
+					sumij = i + j;
+					sumxy = x + y;
+					if (sumij > sumxy && (x != 0 && y != 0) && j < 9 && y < 10)
+					{
+						putchar(i + '0');
+						putchar(j + '0');
+						putchar(' ');
+						putchar(x + '0');
+						putchar(y + '0');
+						putchar(',');
+						putchar(' ');
+					}
 				}
 			}
 		}
