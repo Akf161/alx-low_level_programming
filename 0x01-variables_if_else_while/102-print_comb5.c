@@ -31,11 +31,11 @@ int main(void)
 			{
 				putchar(i + '0');
 				putchar(j + '0');
-				if (i < 9)
+				if (j < 9)
 					putchar(' ');
 				putchar(x + '0');
 				putchar(y + '0');
-				if (i < 9)
+				if (y < 10)
 				{
 					putchar(',');
 					putchar(' ');
