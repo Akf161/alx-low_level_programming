@@ -31,7 +31,7 @@ int main(void)
 						y = 0;
 					else if ((j == y) && (y != 0))
 						j = y;
-					else if ((sumij <= sumxy) && j < 10 && y < 10)
+					else if ((sumij >= sumxy) && j < 10 && y < 10)
 					{
 						putchar(i + '0');
 						putchar(j + '0');
