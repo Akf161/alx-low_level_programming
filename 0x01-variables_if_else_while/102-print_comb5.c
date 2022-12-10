@@ -27,7 +27,7 @@ int main(void)
 				{
 					sumij = i + j;
 					sumxy = x + y;
-					if (sumij < sumxy && (!((x && y) == 0)) && j < 10 && y < 10)
+					if (sumij < sumxy && ((!(x && y) == 0)) && j < 10 && y < 10)
 					{
 						putchar(i + '0');
 						putchar(j + '0');
