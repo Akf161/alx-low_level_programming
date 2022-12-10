@@ -9,42 +9,28 @@ int main(void)
 {
 	int i;
 	int j;
-	int x;
-	int y;
-	int sumij;
-	int sumxy;
 
-	sumij = 0;
-	sumxy = 0;
-
-	for (i = 0; i < 10; i++)
+	for (i = 0; i < 100; i++)
 	{
-		for (j = 0; j < 9; j++)
+		for (j = 0; j < 100; j++)
 		{
-			for (x = 0; x < 10; x++)
+			if (i < j)
 			{
-				for (y = 0; y < 10; y++)
+				putchar((i / 10) + 48);
+				putchar((i % 10) + 48);
+				putchar(' ');
+				putchar((j / 10) + 48);
+				putchar((j % 10) + 48);
+				if (i != 98 || j != 99)
 				{
-					sumij = i + j;
-					sumxy = x + y;
-					if (x == 0 && y == 0)
-						y = 0;
-					else if ((j == y) && (y != 0))
-						j = y;
-					else if ((sumij >= sumxy) && j < 10 && y < 10)
-					{
-						putchar(i + '0');
-						putchar(j + '0');
-						putchar(' ');
-						putchar(x + '0');
-						putchar(y + '0');
-						putchar(',');
-						putchar(' ');
-					}
+					putchar(',');
+					putchar(' ');
 				}
 			}
 		}
 	}
+
 	putchar('\n');
+
 	return (0);
 }
