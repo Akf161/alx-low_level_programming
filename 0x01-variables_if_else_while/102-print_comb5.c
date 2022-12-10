@@ -29,7 +29,9 @@ int main(void)
 					sumxy = x + y;
 					if (x == 0 && y == 0)
 						y = 0;
-					else if ((sumij <= sumxy) && j < 10 && y < 10 && (j != y))
+					else if ((j == y) && (y != 0))
+						j = y;
+					else if ((sumij <= sumxy) && j < 10 && y < 10)
 					{
 						putchar(i + '0');
 						putchar(j + '0');
