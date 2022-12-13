@@ -1,15 +1,21 @@
 #include "main.h"
 
 /**
- * main - entry point
+ * print_alphabet - entry point
  * Return: return 0
+ * Description: This function print the alphabets from a to z
  */
 
 void print_alphabet(void)
 {
-	for (int i = 'a'; i <= 'z'; i++)
+	char c;
+
+	c = 'a';
+
+	while (c <= 'a')
 	{
 		_putchar(i);
+		c++;
 	}
 
 	_putchar('\n');
