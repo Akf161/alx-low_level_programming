@@ -14,7 +14,7 @@ void print_alphabet(void)
 
 	while (c <= 'a')
 	{
-		_putchar(i);
+		_putchar(c);
 		c++;
 	}
 
