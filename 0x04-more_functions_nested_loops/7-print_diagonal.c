@@ -2,13 +2,14 @@
 
 /**
  * print_diagonal - prints diagonal line
- * @c: number of \
+ * @n: number of \
  * Return: void
  */
 
 void print_diagonal(int n)
 {
 	int i;
+	int j;
 
 	for (i = 0; i < n; i++)
 	{
