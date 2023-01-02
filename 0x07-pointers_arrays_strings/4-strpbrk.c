@@ -5,7 +5,7 @@
  * @s: the string to be cleared
  * @accept: the bytes to be searched
  * Return: if matched - a pointer to the matched byte
- * 	if no match - null
+ *         if no match - null
  */
 
 char *_strpbrk(char *s, char *accept)
