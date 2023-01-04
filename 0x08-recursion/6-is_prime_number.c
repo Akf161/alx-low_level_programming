@@ -12,7 +12,7 @@ int other_function(int num, int it)
 {
 	if (it < num)
 	{
-		if (num % 1 == 0)
+		if (num % it == 0)
 		{
 			return (0);
 		}
