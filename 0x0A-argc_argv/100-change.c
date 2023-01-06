@@ -1,5 +1,5 @@
-#include <stdlib.h>
 #include <stdio.h>
+#include <stdlib.h>
 
 /**
  * main - prints minimum number of coins
@@ -40,7 +40,7 @@ int main(int argc, char **argv)
 	{
 		if (t >= coins[po])
 		{
-			a = (to / coins[po]);
+			a = (t / coins[po]);
 			ch += a;
 			t -= coins[po] * a;
 		}
