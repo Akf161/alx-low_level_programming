@@ -4,6 +4,6 @@
 #include <stdio.h>
 
 int _putchar(char c);
-int check_num(char *str);
+int chnum(char *str);
 
 #endif
