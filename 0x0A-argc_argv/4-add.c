@@ -2,6 +2,7 @@
 #include <stdlib.h>
 #include <ctype.h>
 #include <string.h>
+#include "main.h"
 
 /**
  * chnum - check string
@@ -41,10 +42,10 @@ int main(int argc, char **argv)
 	int stoint;
 	int sum;
 
-	sum = 0;
 	i = 1;
+	sum = 0;
 
-	while (count < argc)
+	while (i < argc)
 	{
 		if (chnum(argv[i]))
 		{
